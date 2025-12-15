@@ -7,3 +7,4 @@
 - [x] Add Home, footer and header html and css
 - [x] Add login page html and css
 - [x] Add logo and favIcon
+- [x] Install and setup react-router
