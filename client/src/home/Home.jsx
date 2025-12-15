@@ -4,8 +4,17 @@ export default function Home() {
             {/* <!-- Header --> */}
             < header >
                 <nav>
-                    <h1 class="logo">The Bear Minimum </h1>
-                    <ul class="nav-links">
+                    <div className="logo-container">
+                        <a href="URL_YOU_WANT_TO_LINK_TO">
+                            <img
+                                src="/images/bearLogo.png"
+                                alt="The Bear Minimum logo"
+                                className="logo-img"
+                            />
+                        </a>
+                        <h1 className="logo">The Bear Minimum</h1>
+                    </div>
+                    <ul className="nav-links">
                         {/* All users */}
                         <li><a href="#">About</a></li>
                         <li><a href="#">Bears</a></li>
@@ -22,25 +31,25 @@ export default function Home() {
 
             {/* <!-- Main Content --> */}
             < main >
-                <h4>When time is not a luxury you can afford... </h4>
+                <h2>When time is not a luxury you can afford... </h2>
                 <h1>Latest Bears</h1>
 
-                <section class="cards">
-                    <article class="card">
+                <section className="cards">
+                    <article className="card">
                         <img src="https://via.placeholder.com/300x200" alt="Fluffy Bear" />
                         <h3>Fluffy Bear</h3>
                         <p>Soft and cuddly teddy bear.</p>
                         <button>Details</button>
                     </article>
 
-                    <article class="card">
+                    <article className="card">
                         <img src="https://via.placeholder.com/300x200" alt="Brown Bear" />
                         <h3>Brown Bear</h3>
                         <p>Classic brown teddy bear.</p>
                         <button>Details</button>
                     </article>
 
-                    <article class="card">
+                    <article className="card">
                         <img src="https://via.placeholder.com/300x200" alt="Panda Bear" />
                         <h3>Panda Bear</h3>
                         <p>Adorable panda teddy bear </p>

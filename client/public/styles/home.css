@@ -24,12 +24,23 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+     transform: scale(1.8);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
 
 .nav-links {
     list-style: none;
@@ -57,7 +68,7 @@ main h1 {
     margin-bottom: 2rem;
 }
 
-main h4 {
+main h2 {
     font-size: 1rem;
     text-decoration: underline;
 
