@@ -6,9 +6,14 @@ export default function Home() {
                 <nav>
                     <h1 class="logo">The Bear Minimum </h1>
                     <ul class="nav-links">
-                        <li><a href="#">Bears</a></li>
-                        <li><a href="#">My Bears</a></li>
+                        {/* All users */}
                         <li><a href="#">About</a></li>
+                        <li><a href="#">Bears</a></li>
+
+                        {/* Users logged in*/}
+                        <li><a href="#">My Bears</a></li>
+                        <li><a href="#">Logout</a></li>
+                        {/* Guests */}
                         <li><a href="#">Login</a></li>
                         <li><a href="#">Register</a></li>
                     </ul>
