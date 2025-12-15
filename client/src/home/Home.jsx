@@ -22,7 +22,7 @@ export default function Home() {
 
             {/* <!-- Main Content --> */}
             < main >
-                <h4>When Time is not a luxury you can afford</h4>
+                <h4>When time is not a luxury you can afford... </h4>
                 <h1>Latest Bears</h1>
 
                 <section class="cards">
