@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 
 header {
@@ -33,14 +34,13 @@ nav {
 .logo-img {
     width: 40px;
     height: 40px;
-     transform: scale(1.8);
+    transform: scale(1.9);
 }
 
 .logo {
     font-size: 1.5rem;
     color: #fff;
 }
-
 
 .nav-links {
     list-style: none;
@@ -58,8 +58,9 @@ nav {
     text-decoration: underline;
 }
 
+
 main {
-    flex: 1;
+    flex: 1 0 auto;
     padding: 2rem;
 }
 
@@ -71,7 +72,6 @@ main h1 {
 main h2 {
     font-size: 1rem;
     text-decoration: underline;
-
 }
 
 .cards {
@@ -118,6 +118,7 @@ main h2 {
 }
 
 footer {
+    flex-shrink: 0;
     background-color: #2c3e50;
     color: #fff;
     text-align: center;
