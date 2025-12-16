@@ -9,30 +9,27 @@ import Register from "./components/register/Register"
 import Catalog from "./components/catalog/Catalog"
 import MyBears from "./components/myBears/MyBears"
 import About from "./components/about/About"
+import NotFound from "./components/notFound/NotFound"
 
 function App() {
 
-  return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/myBears" element={<MyBears />} />
-        <Route path="/about" element={<About />} />
+	return (
+		<>
+			<Header />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/login" element={<Login />} />
+				<Route path="/register" element={<Register />} />
+				<Route path="/catalog" element={<Catalog />} />
+				<Route path="/myBears" element={<MyBears />} />
+				<Route path="/about" element={<About />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
 
+			<Footer />
 
-
-
-
-      </Routes>
-
-      <Footer />
-
-    </>
-  )
+		</>
+	)
 }
 
 export default App
