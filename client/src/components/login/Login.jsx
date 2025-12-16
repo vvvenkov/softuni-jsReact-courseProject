@@ -1,36 +1,48 @@
+import { useNavigate } from "react-router";
+import useForm from "../../hooks/useForm";
+import { useContext } from "react";
+import UserContext from "../../contexts/UserContext";
+
 export default function Login() {
+    const navigate = useNavigate();
+    const { loginHandler } = useContext(UserContext);
+
+    const submitHandler = async ({ email, password }) => {
+        if (!email || !password) {
+            return alert('Email and password are required!');
+        }
+
+        try {
+            await loginHandler(email, password);
+
+            navigate('/');
+        } catch (err) {
+            alert(err.message);
+        }
+    }
+
+    const {
+        register,
+        formAction,
+    } = useForm(submitHandler, {
+        email: '',
+        password: '',
+    });
+
     return (
-        <main className="login-page">
-            <form className="login-card">
-                <h1>Login</h1>
+        <section id="login-page">
 
-                <label>
-                    Email
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    />
-                </label>
+            <form id="login" action={formAction}>
+                <div className="container">
+                    <h1>Login</h1>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" id="email" {...register('email')} placeholder="Your Email" />
 
-                <label>
-                    Password
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Enter your password"
-                        required
-                    />
-                </label>
-
-                <button type="submit">Login</button>
-
-                <p className="register-link">
-                    Don&apos;t have an account?{" "}
-                    <a href="/register">Register</a>
-                </p>
+                    <label htmlFor="login-pass">Password</label>
+                    <input type="password" id="login-password" {...register('password')} placeholder="Password" />
+                    <input type="submit" className="btn submit" value="Login" />
+                </div>
             </form>
-        </main>
+        </section>
     );
 }
