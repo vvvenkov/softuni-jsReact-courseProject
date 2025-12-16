@@ -1,31 +1,45 @@
+import { Link } from "react-router"
+import { useUserContext } from "../../contexts/UserContext";
+
 export default function Header() {
+    const { isAuthenticated } = useUserContext();
 
-    return (< header >
-        <nav>
-            <div className="logo-container">
-                <a href="/">
-                    <img
-                        src="/images/bearLogo.png"
-                        alt="The Bear Minimum logo"
-                        className="logo-img"
-                    />
-                </a>
-                <h1 className="logo">The Bear Minimum </h1>
-            </div>
-            <ul className="nav-links">
-                {/* All users */}
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/catalog">Bears</a></li>
+    return (
+        <header>
+            <nav>
+                <div className="logo-container">
+                    <Link to="/">
+                        <img
+                            src="/images/bearLogo.png"
+                            alt="The Bear Minimum logo"
+                            className="logo-img"
+                        />
+                    </Link>
+                    <h1 className="logo">The Bear Minimum </h1>
+                </div>
+                <ul className="nav-links">
+                    {/* All users */}
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/catalog">Bears</Link></li>
 
-                {/* Users logged in*/}
-                <li><a href="/myBears">My Bears</a></li>
-                <li><a href="/logout">Logout</a></li>
-                {/* Guests */}
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Register</a></li>
-            </ul>
-        </nav>
-    </header >
+                    {isAuthenticated
+                        ? (
+                            <>
+                                <li><Link to="/myBears">My Bears</Link></li>
+                                <li><Link to="/logout">Logout</Link></li>
+                            </>
+                        )
+                        : (
+                            <>
+                                {/* // Guests */}
+                                < li > <Link to="/login">Login</Link></li>
+                                <li><Link to="/register">Register</Link></li>
+                            </>
+                        )
+                    }
+                </ul>
+            </nav>
+        </header >
     )
 }
