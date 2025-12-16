@@ -1,20 +1,21 @@
-import { Route, Routes } from "react-router"
+import { Route, Routes } from "react-router";
 
+import Home from "./components/home/Home";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Login from "./components/login/Login";
+import Register from "./components/register/Register";
+import Catalog from "./components/catalog/Catalog";
+import MyBears from "./components/myBears/MyBears";
+import About from "./components/about/About";
+import NotFound from "./components/notFound/NotFound";
+import { UserProvider } from "./contexts/UserContext";
 
-import Home from "./components/home/Home"
-import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer"
-import Login from './components/login/Login'
-import Register from "./components/register/Register"
-import Catalog from "./components/catalog/Catalog"
-import MyBears from "./components/myBears/MyBears"
-import About from "./components/about/About"
-import NotFound from "./components/notFound/NotFound"
+import Logout from "./components/logout/Logout";
 
 function App() {
-
 	return (
-		<>
+		<UserProvider>
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
@@ -23,13 +24,12 @@ function App() {
 				<Route path="/catalog" element={<Catalog />} />
 				<Route path="/myBears" element={<MyBears />} />
 				<Route path="/about" element={<About />} />
+				<Route path="/logout" element={<Logout />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
-
 			<Footer />
-
-		</>
-	)
+		</UserProvider>
+	);
 }
 
-export default App
+export default App;
