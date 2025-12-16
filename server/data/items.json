@@ -1,52 +1,15 @@
 {
     "b2f4a8b0-7b2a-4af3-91f7-1a6a8b17eac2": {
-        "title": "Buy groceries",
-        "completed": false,
-        "_id": "b2f4a8b0-7b2a-4af3-91f7-1a6a8b17eac2"
+        "_id": "b2f4a8b0-7b2a-4af3-91f7-1a6a8b17eac2",
+        "title": "Big Bear",
+        "summary": "Adult and Adult Bear",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.natgeofe.com%2Fn%2F7bd4e32f-9caf-4f2f-96f9-aa456d99896f%2FMM10120_230829_14318_4x3.jpg&f=1&nofb=1&ipt=0991388e56ad6b8cbc01564f0654ed710424ddc91442cab08082ecdb8deedca1"
     },
     "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e": {
-        "title": "Finish project report",
-        "completed": false,
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e"
-    },
-    "1e2e1b6e-5d8a-4e37-8d5f-8cde9a8bbf18": {
-        "title": "Call the electrician",
-        "completed": false,
-        "_id": "1e2e1b6e-5d8a-4e37-8d5f-8cde9a8bbf18"
-    },
-    "8c3bb37d-8121-4805-b46d-792be4c48f2d": {
-        "title": "Book flight tickets",
-        "completed": true,
-        "_id": "8c3bb37d-8121-4805-b46d-792be4c48f2d"
-    },
-    "f3e94e2a-65e4-4a26-b6d3-7b6bb2f19d24": {
-        "title": "Update website content",
-        "completed": false,
-        "_id": "f3e94e2a-65e4-4a26-b6d3-7b6bb2f19d24"
-    },
-    "d93e7e7c-9d90-4f2c-96ce-d8a8a5d4562e": {
-        "title": "Pay electricity bill",
-        "completed": false,
-        "_id": "d93e7e7c-9d90-4f2c-96ce-d8a8a5d4562e"
-    },
-    "a7cc87e1-7a28-4b4b-8ac8-9b20a236b9e1": {
-        "title": "Organize workshop materials",
-        "completed": false,
-        "_id": "a7cc87e1-7a28-4b4b-8ac8-9b20a236b9e1"
-    },
-    "62c3b5b8-3f0b-4a9c-8a5e-f1c29a2e9202": {
-        "title": "Team meeting preparation",
-        "completed": true,
-        "_id": "62c3b5b8-3f0b-4a9c-8a5e-f1c29a2e9202"
-    },
-    "d8f8a6a4-5d79-4d53-b3b9-2b12702c5209": {
-        "title": "Clean the office",
-        "completed": false,
-        "_id": "d8f8a6a4-5d79-4d53-b3b9-2b12702c5209"
-    },
-    "e45c24f6-bf3a-482c-86b4-97cc51792b5a": {
-        "title": "Prepare client presentation",
-        "completed": false,
-        "_id": "e45c24f6-bf3a-482c-86b4-97cc51792b5a"
+        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
+        "title": "Little Bear",
+        "summary": "Small and Ungrown Bear",
+        "description": "Lorem ipsum asdliaushdgliusas",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
     }
 }
