@@ -21,8 +21,8 @@ export default function Header() {
                 <li><a href="#">My Bears</a></li>
                 <li><a href="#">Logout</a></li>
                 {/* Guests */}
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
             </ul>
         </nav>
     </header >
