@@ -9,7 +9,8 @@ export default function Logout() {
     useEffect(() => {
         logoutHandler()
             .then(() => navigate('/'))
-            .catch(() => {
+            .catch((err) => {
+                console.error("Logout failed:", err);
                 alert('Problem with logout');
                 navigate('/');
             });
