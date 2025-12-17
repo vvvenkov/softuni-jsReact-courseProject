@@ -1,43 +1,30 @@
 {
+    "b2f4a8b0-7b2a-4af3-91d7-1a6a8b17eac2": {
+        "_id": "b2f4a8b0-7b2a-4af3-91d7-1a6a8b17eac2",
+        "title": "Small Bear",
+        "summary": "Let's get down to bear basics!",
+        "description": "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words alter",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.c6ACyq35sDqrtSC5ogEahwHaHk%3Fpid%3DApi%26ucfimg%3D1&f=1&ipt=531c318a43bf58e87f160534104ac2b45ee9c4b7e379bf4795e537089538c411&ipo=images"
+    },
     "b2f4a8b0-7b2a-4af3-91f7-1a6a8b17eac2": {
         "_id": "b2f4a8b0-7b2a-4af3-91f7-1a6a8b17eac2",
         "title": "Big Bear",
-        "summary": "Adult and Adult Bear",
+        "summary": "Un-bear-ably intense!",
+        "description": "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words alter",
         "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.natgeofe.com%2Fn%2F7bd4e32f-9caf-4f2f-96f9-aa456d99896f%2FMM10120_230829_14318_4x3.jpg&f=1&nofb=1&ipt=0991388e56ad6b8cbc01564f0654ed710424ddc91442cab08082ecdb8deedca1"
     },
-    "c80fbd8d-2b37-4d60-a5ccs-51c7a0c3b57e": {
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
-        "title": "Little Bear",
-        "summary": "Small and Ungrown Bear",
-        "description": "Lorem ipsum asdliaushdgliusas",
-        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
+    "b2f4asb0-7b2a-4af3-91f7-1a6a8b17eac2": {
+        "_id": "b2f4asb0-7b2a-4af3-91f7-1a6a8b17eac2",
+        "title": "Beear",
+        "summary": "A bear deserves to lager around!",
+        "description": "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words alter",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.etsystatic.com%2F6236406%2Fr%2Fil%2F128c90%2F5729609028%2Fil_1080xN.5729609028_o5da.jpg&f=1&nofb=1&ipt=cc0edf3520cf19f6a634c7eb91a247e94c68d42221ca4757573eac79a170f066"
     },
-    "c80fbd8d-2b37-4d60-a5cac-51c7a0c3b57e": {
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
-        "title": "Little Bear",
-        "summary": "Small and Ungrown Bear",
-        "description": "Lorem ipsum asdliaushdgliusas",
-        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
-    },
-    "c80fbd8d-2b37-4d60-ad5cc-51c7a0c3b57e": {
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
-        "title": "Little Bear",
-        "summary": "Small and Ungrown Bear",
-        "description": "Lorem ipsum asdliaushdgliusas",
-        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
-    },
-    "c80fbd8d-2b37-4d60-aa5cac-51c7a0c3b57e": {
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
-        "title": "Little Bear",
-        "summary": "Small and Ungrown Bear",
-        "description": "Lorem ipsum asdliaushdgliusas",
-        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
-    },
-    "c80fbd8d-2b37-4d60-a5cc-d51c7a0c3b57e": {
-        "_id": "c80fbd8d-2b37-4d60-a5cc-51c7a0c3b57e",
-        "title": "Little Bear",
-        "summary": "Small and Ungrown Bear",
-        "description": "Lorem ipsum asdliaushdgliusas",
-        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F30146991%2Fpexels-photo-30146991.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-ezvedat-337111750-30146991.jpg%26fm%3Djpg&f=1&nofb=1&ipt=ed63299a5c76d845bca5ca4422cc5861876870319dbc1091150964fc50e9024c"
+    "b2f4a8b0-7b2a-4af3-91d7-1a6a8b17sac2": {
+        "_id": "b2f4a8b0-7b2a-4af3-91d7-1a6a8b17sac2",
+        "title": "Polar Bear",
+        "summary": "She's totally polar-ized!",
+        "description": "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words alter",
+        "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.britannica.com%2F27%2F245927-050-06C2A076.jpg&f=1&nofb=1&ipt=3ff6bcb4794f7ce40a72e08981d9eac881743e2e82795f4fd71467152d5cc648"
     }
 }
