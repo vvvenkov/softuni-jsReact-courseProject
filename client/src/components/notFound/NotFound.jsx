@@ -11,7 +11,7 @@ export default function NotFound() {
             <section className="cards">
                 <article className="card">
                     <img
-                        src="https://via.placeholder.com/300x200?text=Bear+Lost"
+                        src="/images/404bear.png"
                         alt="Lost bear"
                     />
                     <h3>Looks like you’re lost</h3>
