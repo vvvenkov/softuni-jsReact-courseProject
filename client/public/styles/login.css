@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: #2c3e50;
     padding: 1rem 2rem;
@@ -45,7 +44,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Login Page */
 .login-page {
     flex: 1;
     display: flex;
@@ -113,7 +111,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     background-color: #2c3e50;
     color: #fff;
