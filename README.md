@@ -1,4 +1,5 @@
 Bear Collection Manager SPA
+
 This project is a "Bear Minimum" SoftUni ReactJS Exam course work. The pun intends that the project is absolutely inadequate and barely meets the requirements (or doesn't) for passing the ReactJS exam in SoftUni.
 
 Due to lack of time (and skills) this project is a sort of a smashed vase that has been glued together. LLMs have been heavily used in the means of creating it.
