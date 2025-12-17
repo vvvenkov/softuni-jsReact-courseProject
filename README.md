@@ -38,23 +38,3 @@ Development Server:  Vite
 Core Architecture & Custom Hooks
 The application's logic is modularized using custom hooks, centralizing business logic away from components
 
----------------------------------------------------
-Project structure:
-client/
-├── src/
-│   ├── components/       // Presentational components (Header, Footer, BearCard)
-│   ├── contexts/
-│   │   └── UserContext.jsx  // Global state management
-│   ├── hooks/
-│   │   ├── useRequest.js
-│   │   ├── useForm.js
-│   │   └── usePersistedState.js
-│   ├── pages/
-│   │   ├── AddBear.jsx      // Create functionality
-│   │   ├── Edit.jsx         // Update functionality
-│   │   ├── Details.jsx      // Read single resource
-│   │   └── MyBears.jsx      // Owner-specific list view
-│   └── App.jsx           // Main router setup
-└── 
-server/ **SOFTUNI PRACTICE SERVER""
--------------------------------------------------
