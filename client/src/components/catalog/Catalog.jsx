@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
 import BearCard from "../bearCard/BearCard";
+import useRequest from "../../hooks/useRequest";
 
 export default function Catalog() {
     const [bears, setBears] = useState([]);
+    const { request } = useRequest();
 
     useEffect(() => {
-        fetch("http://localhost:3030/jsonstore/bears")
-            .then(res => res.json())
+        const endpoint = "/jsonstore/bears";
+
+        request(endpoint)
             .then(result => {
                 const bearsArray = Object.values(result);
                 setBears(bearsArray);
             })
-            .catch(err => console.error(err));
-    }, []);
+            .catch(err => console.error("Failed to fetch bear catalog:", err));
+    }, [request]);
 
     return (
         <main>
-            <h2>Find your perfect companion</h2>
+            <h2>Find your fur-ever friends</h2>
             <h1>Bear Catalog</h1>
 
             <section className="cards">
