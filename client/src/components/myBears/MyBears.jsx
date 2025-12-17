@@ -1,45 +1,102 @@
+import { useEffect, useState, useContext } from "react";
+import { useNavigate } from "react-router";
+import BearCard from "../bearCard/BearCard";
+import useRequest from "../../hooks/useRequest";
+import UserContext from "../../contexts/UserContext";
+
 export default function MyBears() {
+    const [bears, setBears] = useState(null);
+    const { request } = useRequest();
+    const { user, isAuthenticated } = useContext(UserContext);
+    const navigate = useNavigate();
+
+
+    const onDeleteHandler = async (bearId, bearTitle) => {
+        const confirmed = confirm(`Are you sure you want to delete your bear: "${bearTitle}"?`);
+
+        if (!confirmed) {
+            return;
+        }
+
+        try {
+            await request(
+                `/jsonstore/bears/${bearId}`,
+                'DELETE',
+                null,
+                { accessToken: user.accessToken }
+            );
+
+            setBears(state => state.filter(bear => bear._id !== bearId));
+
+        } catch (err) {
+            console.error(`Failed to delete bear ${bearId}:`, err);
+            alert("Failed to delete bear. Please try again.");
+        }
+    };
+
+    useEffect(() => {
+        if (!isAuthenticated || !user?._id) {
+            setBears([]);
+            return;
+        }
+
+        const endpoint = "/jsonstore/bears";
+
+        request(endpoint)
+            .then(result => {
+                const allBears = Object.values(result || {});
+                const myBears = allBears.filter(
+
+                    bear => bear._ownerId === user._id
+                );
+
+                setBears(myBears);
+            })
+            .catch(err => {
+                console.error("Failed to fetch user's bears:", err);
+                setBears([]);
+            });
+    }, [request, user, isAuthenticated]);
+
+    if (bears === null) {
+        return <h3 className="loading">Bear with me...</h3>;
+    }
+
     return (
         <main>
-            <h2>Your personal collection</h2>
-            <h1>My Bears</h1>
+            <h2>My Bear Collection</h2>
 
             <section className="cards">
-                <article className="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Fluffy Bear" />
-                    <h3>Fluffy Bear</h3>
-                    <p>My very first teddy bear.</p>
+                {bears.length > 0 ? (
+                    bears.map(bear => (
 
-                    <div className="card-actions">
-                        <button>Details</button>
-                        <button className="secondary">Edit</button>
-                        <button className="danger">Delete</button>
-                    </div>
-                </article>
+                        <div key={bear._id} className="bear-card-wrapper">
 
-                <article className="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Panda Bear" />
-                    <h3>Panda Bear</h3>
-                    <p>Gift from a special person.</p>
 
-                    <div className="card-actions">
-                        <button>Details</button>
-                        <button className="secondary">Edit</button>
-                        <button className="danger">Delete</button>
-                    </div>
-                </article>
+                            <BearCard {...bear} />
 
-                <article className="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Brown Bear" />
-                    <h3>Brown Bear</h3>
-                    <p>Classic and cozy.</p>
 
-                    <div className="card-actions">
-                        <button>Details</button>
-                        <button className="secondary">Edit</button>
-                        <button className="danger">Delete</button>
-                    </div>
-                </article>
+                            <div className="card-actions">
+                                <button
+                                    onClick={() => navigate(`/bears/${bear._id}/edit`)}
+                                    className="btn card-edit-btn"
+                                >
+                                    Edit
+                                </button>
+                                <button
+                                    onClick={() => onDeleteHandler(bear._id, bear.title)}
+                                    className="btn card-delete-btn"
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <h3 className="no-articles">
+                        You haven't added any bears yet.
+                    </h3>
+                )}
             </section>
         </main>
     );
