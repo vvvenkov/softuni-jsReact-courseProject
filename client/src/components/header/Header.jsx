@@ -21,12 +21,13 @@ export default function Header() {
                     {/* All users */}
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/catalog">Bears</Link></li>
+                    <li><Link to="/bears/catalog">Bears</Link></li>
 
                     {isAuthenticated
                         ? (
                             <>
-                                <li><Link to="/myBears">My Bears</Link></li>
+                                <li><Link to="/bears/create">Add a bear</Link></li>
+                                <li><Link to="/bears/myBears">My Bears</Link></li>
                                 <li><Link to="/logout">Logout</Link></li>
                             </>
                         )
