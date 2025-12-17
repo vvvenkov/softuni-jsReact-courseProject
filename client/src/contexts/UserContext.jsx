@@ -1,32 +1,47 @@
 import { createContext, useContext, useState } from "react";
 import useRequest from "../hooks/useRequest";
+import usePersistedState from "../hooks/usePersistedState";
 
 const UserContext = createContext({
     isAuthenticated: false,
-    user: null,
-    registerHandler: () => {},
-    loginHandler: () => {},
-    logoutHandler: () => {},
+    user: {
+        email: '',
+        password: '',
+        _createdOn: 0,
+        _id: '',
+        accessToken: ''
+    },
+    registerHandler() { },
+    loginHandler() { },
+    logoutHandler() { },
 });
 
-export function UserProvider({ children }) {
-    const [user, setUser] = useState(null);
+export function UserProvider({
+    children,
+}) {
+    const [user, setUser] = usePersistedState(null);
     const { request } = useRequest();
 
     const registerHandler = async (email, password) => {
         const newUser = { email, password };
+
+        // Register API call 
         const result = await request('/users/register', 'POST', newUser);
+
+        // Login user after register
         setUser(result);
     };
 
     const loginHandler = async (email, password) => {
         const result = await request('/users/login', 'POST', { email, password });
+
+        console.log(result);
+
         setUser(result);
     };
 
     const logoutHandler = () => {
-        // Check if user exists before calling request
-        if (!user?.accessToken) {
+        if (!user || !user.accessToken) {
             setUser(null);
             return Promise.resolve();
         }
@@ -35,7 +50,7 @@ export function UserProvider({ children }) {
             .finally(() => setUser(null));
     };
 
-    const value = {
+    const userContextValues = {
         user,
         isAuthenticated: !!user?.accessToken,
         registerHandler,
@@ -43,11 +58,17 @@ export function UserProvider({ children }) {
         logoutHandler,
     };
 
-    return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+    return (
+        <UserContext.Provider value={userContextValues}>
+            {children}
+        </UserContext.Provider>
+    );
 }
 
 export function useUserContext() {
-    return useContext(UserContext);
+    const contextData = useContext(UserContext);
+
+    return contextData;
 }
 
 export default UserContext;
